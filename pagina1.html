@@ -1,15 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Esta es mi segunda pagina</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energías Renovables</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body onload="mostrarAlerta()">
+    <header>
+        <h1>Energías Limpias y Sostenibilidad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html" aria-current="page">Energías Renovables</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h2>¿Paginas web?</h2>
-<p>inicio esta pagina es un incio</p>
+    <main>
+        <!-- Intro -->
+        <section class="intro">
+            <h2>¿Qué son las energías renovables?</h2>
+            <p>
+                Las <strong>energías renovables</strong> provienen de fuentes naturales y
+                virtualmente inagotables, como el sol, el viento, el agua, la biomasa y el calor interno de la Tierra.
+                Su aprovechamiento reduce las emisiones de gases de efecto invernadero, promueve la independencia
+                energética y fomenta el desarrollo sostenible.
+            </p>
+            <img src="img/energias-renovables.jpg" alt="Ilustración de energías renovables" class="responsive-img" />
+        </section>
 
-        
+        <!-- Tipos de energías -->
+        <section>
+            <h2>Principales tipos</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>☀️ Solar</h3>
+                    <p>Convierte la radiación solar en electricidad (fotovoltaica) o calor útil (térmica).
+                    Es modular y escalable desde tejados hasta plantas a gran escala.</p>
+                </article>
+                <article class="card">
+                    <h3>🌬️ Eólica</h3>
+                    <p>Genera electricidad a partir del viento mediante aerogeneradores onshore y offshore.
+                    Su costo ha disminuido notablemente en la última década.</p>
+                </article>
+                <article class="card">
+                    <h3>💧 Hidroeléctrica</h3>
+                    <p>Aprovecha la energía potencial del agua en ríos y embalses. Puede ser a gran escala o de pasada/microhidro.</p>
+                </article>
+                <article class="card">
+                    <h3>🌱 Biomasa</h3>
+                    <p>Usa materia orgánica (residuos agrícolas, forestales, urbanos) para producir calor, electricidad o biocombustibles.</p>
+                </article>
+                <article class="card">
+                    <h3>🌋 Geotérmica</h3>
+                    <p>Extrae calor del subsuelo para calefacción o generación eléctrica con alta disponibilidad.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Beneficios (reutiliza el mismo botón/función que en index) -->
+        <section class="benefits">
+            <h2>Beneficios clave</h2>
+            <button onclick="toggleBeneficios()">Mostrar/Ocultar beneficios</button>
+            <ul id="lista-beneficios">
+                <li>🔋 Diversificación de la matriz energética y seguridad de suministro</li>
+                <li>🌎 Disminución de la huella de carbono y de contaminantes locales</li>
+                <li>💼 Generación de empleo y encadenamientos productivos</li>
+                <li>🏘️ Impulso a comunidades energéticas y autoconsumo</li>
+            </ul>
+        </section>
+
+        <!-- Comparativa simple -->
+        <section>
+            <h2>Comparativa rápida</h2>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Fuente</th>
+                        <th>Intermitencia</th>
+                        <th>Aplicaciones típicas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Solar FV</td>
+                        <td>Alta (día/noche, clima)</td>
+                        <td>Tejados, granjas solares, bombeo</td>
+                    </tr>
+                    <tr>
+                        <td>Eólica</td>
+                        <td>Media/alta (variabilidad del viento)</td>
+                        <td>Parques onshore/offshore</td>
+                    </tr>
+                    <tr>
+                        <td>Hidroeléctrica</td>
+                        <td>Baja/media (según caudal)</td>
+                        <td>Base/cubrir picos, microcentrales</td>
+                    </tr>
+                    <tr>
+                        <td>Biomasa</td>
+                        <td>Baja (despachable)</td>
+                        <td>Calor industrial, cogeneración</td>
+                    </tr>
+                    <tr>
+                        <td>Geotérmica</td>
+                        <td>Baja (24/7)</td>
+                        <td>Calefacción distrital, generación</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Herramientas -->
+        <section class="tools">
+            <button onclick="cambiarFondo()">Cambiar color de fondo</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por Arley Villa Salazar</p>
+        <p>
+            <a href="mailto:arley.villa@udea.edu.co">✉️ Contacto</a> |
+            <a href="https://www.google.com" target="_blank" rel="noopener">🌐 Google</a>
+        </p>
+        <p id="fecha-hora"></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
