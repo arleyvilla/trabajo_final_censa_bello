@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Limpias y Sostenibilidad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="mostrarAlerta()">
+    <header>
+        <h1>Energías Limpias y Sostenibilidad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Página Dos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>¿Qué son las energías limpias?</h2>
+            <p>Las energías limpias son aquellas que se obtienen de fuentes renovables y que no generan contaminación durante su uso. Algunas de estas fuentes incluyen la energía solar, eólica, hidroeléctrica, y la energía generada a partir del hidrógeno verde.</p>
+            <img src="img/parque-solar1-1.jpg" alt="Parque Solar" class="responsive-img">
+        </section>
+
+        <section class="benefits">
+            <h2>Beneficios de las Energías Limpias</h2>
+            <button onclick="toggleBeneficios()">Mostrar/Ocultar beneficios</button>
+            <ul id="lista-beneficios">
+                <li>🌱 Reducción de Emisiones de CO₂</li>
+                <li>🌬️ Disminución de la Contaminación atmosférica</li>
+                <li>☀️ Disponibilidad inagotable de recursos naturales como el sol</li>
+                <li>⚡ Impulso al desarrollo de Comunidades Energéticas</li>
+            </ul>
+        </section>
+
+        <section class="tools">
+            <button onclick="cambiarFondo()">Cambiar color de fondo</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por Arley Villa Salazar</p>
+        <p>
+            <a href="mailto:arley.villa@udea.edu.co">✉️ Contacto</a> |
+            <a href="https://www.google.com" target="_blank">🌐 Google</a>
+        </p>
+        <p id="fecha-hora"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
